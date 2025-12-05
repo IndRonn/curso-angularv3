@@ -1,109 +1,115 @@
 .login-auth-page {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-4);
-    color: var(--color-3);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+position: absolute;
+width: 100vw;
+height: 100vh;
+background-color: var(--color-4);
+color: var(--color-3);
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+align-content: center;
 }
 
 .login-auth-page .login-auth-wrapper {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+width: 25%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
 }
 
 .login-auth-page .login-social-zone {
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    width: 100%;
+display: flex;
+flex-direction: column;
+gap: .75rem;
+width: 100%;
 }
 
 .login-auth-page .social-btn {
-    border: 0;
-    padding: .5rem 2rem;
-    width: 100%;
-    font-size: var(--font-size-2);
-    border-radius: var(--border-radius-2);
-    box-shadow: var(--shadow-1);
-    border: solid 1px var(--color-4);
-    background-color: var(#06402b);
-    font-weight: 600;
+border: 0;
+padding: .5rem 2rem;
+width: 100%;
+font-size: var(--font-size-2);
+border-radius: var(--border-radius-2);
+box-shadow: var(--shadow-1);
+border: solid 1px rgba(0,0,0,0.08);
+/* Sober y elegante: gris carbón suave */
+background-color: #2F2F2F;
+color: #F5F5F5;
+font-weight: 600;
 }
 
 .login-auth-page .login-social-zone .social-btn.btn-fb {
-    background-color: #3A61B3;
-    color: var(--color-4);
+/* Sober: azul profundo (elegante, formal) */
+background-color: #0C2340;
+color: #F5F5F5;
 }
 
 .login-auth-page .login-social-zone .social-btn.btn-apple {
-    background-color: #1a1a1a;
-    color: var(--color-4);
+/* Sober: negro carbón (minimalista) */
+background-color: #0B0B0B;
+color: #F5F5F5;
 }
 
 .login-auth-page .separator {
-    width: 100%;
-    margin: 2rem 0;
-    border-bottom: solid 1px var(--color-2);
-    opacity: .2;
+width: 100%;
+margin: 2rem 0;
+border-bottom: solid 1px var(--color-2);
+opacity: .2;
 }
 
 .login-auth-page .login-auth-form {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    flex-direction: column;
+display: flex;
+width: 100%;
+justify-content: flex-start;
+flex-direction: column;
 }
 
 .login-auth-page .login-auth-form .form-group {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
 }
 
 .login-auth-page .login-auth-form .form-group input {
-    border: solid 1px #e7e7e7;
-    border-radius: var(--border-radius-1);
-    height: 30px;
-    padding: .25rem .5rem;
-    font-size: 90%;
+border: solid 1px #e7e7e7;
+border-radius: var(--border-radius-1);
+height: 30px;
+padding: .25rem .5rem;
+font-size: 90%;
 }
 
 .login-auth-page .login-auth-form label {
-    padding-bottom: .35rem;
-    font-weight: 600;
-    display: inline-block;
-    margin: 0;
+padding-bottom: .35rem;
+font-weight: 600;
+display: inline-block;
+margin: 0;
 }
 
 .login-auth-page .login-auth-form .form-steps {
-    padding: .5rem 0;
+padding: .5rem 0;
 }
 
 .login-auth-page .login-auth-form .form-steps .link {
-    color: var(--color-2);
-    font-size: 85%;
-    font-weight: 500;
-    text-decoration: underline;
+color: var(--color-2);
+font-size: 85%;
+font-weight: 500;
+text-decoration: underline;
 }
 
 .login-auth-page .login-auth-form .form-steps .link:hover {
-    color: var(--color-1);
+color: var(--color-1);
 }
 
 .login-auth-page .login-auth-form .form-action .login {
-    color: var(--color-4);
-    margin: 1rem 0;
-    background-color: var(--color-1);
+color: #111111;
+margin: 1rem 0;
+/* Acción principal: dorado mate elegante para contraste */
+background-color: #BFA76A;
+border: solid 1px rgba(0,0,0,0.08);
 }
 
 input.ng-invalid.ng-touched {
-    border: solid 2px red !important
+border: solid 2px red !important
 }
