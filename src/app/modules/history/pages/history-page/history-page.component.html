@@ -1,0 +1,7 @@
+<!-- <button (click)="updateData()">Actualizar Datos del Servicio</button>
+<button (click)="updateMessage()">Actualizar Datos RxJS</button> -->
+<div class="history-page">
+    <app-search (callBackData)="search($event)"></app-search>
+    <app-play-list-body [tracks]="tracks | async"> </app-play-list-body>
+    <!-- <app-play-list-body [tracks]="tracks> </app-play-list-body> -->
+</div>

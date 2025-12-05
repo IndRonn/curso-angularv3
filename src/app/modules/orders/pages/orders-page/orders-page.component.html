@@ -1,0 +1,30 @@
+<div class="orders-page">
+  <h1>Pedidos</h1>
+
+  <input type="text" placeholder="Buscar por cliente" [(ngModel)]="search" />
+  
+  <p>
+    Mostrando {{ pagedOrders.length }} de {{ filteredOrders.length }} pedidos
+    (Página {{ currentPage }} de {{ totalPages }})
+  </p>
+
+  <ul>
+    <li *ngFor="let order of pagedOrders">
+      {{ order.id }} - {{ order.customer }} - {{ order.total | currency }}
+    </li>
+  </ul>
+
+  <div class="pagination-controls">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">
+      &lt; previousPage()
+    </button>
+    
+    <span>
+      Página {{ currentPage }} de {{ totalPages }}
+    </span>
+    
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      nextPage() >
+    </button>
+  </div>
+</div>
