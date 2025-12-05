@@ -34,7 +34,7 @@
     border-radius: var(--border-radius-2);
     box-shadow: var(--shadow-1);
     border: solid 1px var(--color-4);
-    background-color: var(--color-4);
+    background-color: var(#06402b);
     font-weight: 600;
 }
 
